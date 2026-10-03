@@ -2,7 +2,7 @@
     --color-principal: #8b6bb1;
     --color-secundario: #d97991;
     --color-dorado: #c69c3e;
-    --color-fondo: #fffafd;
+    --color-fondo: #e3d5ee;
     --color-texto: #382d3d;
     --color-blanco: #ffffff;
     --color-hover: #704f96;
@@ -189,10 +189,16 @@ section h2 {
 
 .proyecto-card:nth-child(2) {
     border-bottom-color: var(--color-secundario);
+    background: #fff0f4;
 }
 
 .proyecto-card:nth-child(3) {
-    border-bottom-color: var(--color-principal);
+    border-bottom-color: var(--color-dorado);
+    background: #fff8e8;
+}
+
+.proyecto-card:nth-child(1) {
+    background: #f2ebf7;
 }
 
 .proyecto-card img {
@@ -205,6 +211,14 @@ section h2 {
 .proyecto-card h3 {
     padding: 14px 10px 6px;
     color: var(--color-principal);
+}
+
+.proyecto-card:nth-child(2) h3 {
+    color: var(--color-secundario);
+}
+
+.proyecto-card:nth-child(3) h3 {
+    color: #9a7426;
 }
 
 .proyecto-card p {
