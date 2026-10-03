@@ -5,12 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi Portafolio</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
     <header>
-        <h2>Mi Portafolio</h2>
+        <h2 class="logo">Mi Portafolio</h2>
 
         <nav>
             <a href="#inicio">Inicio</a>
@@ -22,25 +23,27 @@
 
     <main>
 
-        <section id="inicio">
+        <section id="inicio" class="hero">
 
-            <img src="img/tulips.jpg" alt="Tulipanes">
+            <img class="hero-image" src="img/tulips.jpg" alt="Tulipanes de colores">
 
-            <h1>Aprendiendo a programar y creando nuevas oportunidades</h1>
+            <div class="hero-content">
+                <h1>Aprendiendo a programar y creando nuevas oportunidades</h1>
 
-            <p>
-                Estoy aprendiendo programación y desarrollo web con el propósito
-                de mejorar mis habilidades, crear proyectos útiles y prepararme
-                para tener nuevas oportunidades laborales y generar ingresos a
-                través de mi trabajo y conocimientos.
-            </p>
+                <p>
+                    Estoy aprendiendo programación y desarrollo web con el propósito
+                    de mejorar mis habilidades, crear proyectos útiles y prepararme
+                    para tener nuevas oportunidades laborales y generar ingresos a
+                    través de mi trabajo y conocimientos.
+                </p>
 
-            <a href="#proyectos">Ver mis proyectos</a>
+                <a class="boton" href="#proyectos">Ver mis proyectos</a>
+            </div>
 
         </section>
 
 
-        <section id="proyectos">
+        <section id="proyectos" class="proyectos">
 
             <h2>Mis proyectos</h2>
 
@@ -50,7 +53,9 @@
                 útiles para otras personas.
             </p>
 
-            <article>
+            <div class="proyectos-grid">
+
+            <article class="proyecto-card">
 
                 <img src="img/imagen1.jpg" alt="Aprendiendo programación">
 
@@ -65,7 +70,7 @@
             </article>
 
 
-            <article>
+            <article class="proyecto-card">
 
                 <img src="img/imagen2.jpg" alt="Desarrollo de páginas web">
 
@@ -80,7 +85,7 @@
             </article>
 
 
-            <article>
+            <article class="proyecto-card">
 
                 <img src="img/imagen3.jpg" alt="Página para ayudar a las personas">
 
@@ -93,6 +98,8 @@
                 </p>
 
             </article>
+
+            </div>
 
         </section>
 
