@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="es">
 
@@ -11,7 +12,7 @@
 <body>
 
     <header>
-        <h2 class="logo">Mi Portafolio</h2>
+        <h1>Bienvenido a mi Portafolio</h1>
 
         <nav>
             <a href="#inicio">Inicio</a>
@@ -19,16 +20,28 @@
             <a href="#sobre-mi">Sobre mí</a>
             <a href="#contacto">Contacto</a>
         </nav>
+
+        <!-- Botón para cambiar entre el modo claro y oscuro -->
+        <div class="controles-usuario">
+            <button id="btn-toggle-tema" class="btn-tema">
+                🌙 Cambiar Tema
+            </button>
+        </div>
     </header>
 
     <main>
 
         <section id="inicio" class="hero">
 
-            <img class="hero-image" src="img/tulips.jpg" alt="Tulipanes de colores">
+            <img class="hero-image" src="img/tulips.jpg"
+                 alt="Tulipanes de colores">
 
             <div class="hero-content">
+
                 <h1>Aprendiendo a programar y creando nuevas oportunidades</h1>
+
+                <!-- Aquí aparecerá el saludo dinámico según la hora -->
+                <p id="saludo-tiempo-real" class="texto-resaltado"></p>
 
                 <p>
                     Estoy aprendiendo programación y desarrollo web con el propósito
@@ -38,10 +51,9 @@
                 </p>
 
                 <a class="boton" href="#proyectos">Ver mis proyectos</a>
+
             </div>
-
         </section>
-
 
         <section id="proyectos" class="proyectos">
 
@@ -55,54 +67,45 @@
 
             <div class="proyectos-grid">
 
-            <article class="proyecto-card">
+                <article class="proyecto-card">
+                    <img src="img/imagen1.jpg" alt="Aprendiendo programación">
 
-                <img src="img/imagen1.jpg" alt="Aprendiendo programación">
+                    <h3>Aprender programación</h3>
 
-                <h3>Aprender programación</h3>
+                    <p>
+                        Mi objetivo es aprender a programar de una buena manera,
+                        desarrollar nuevas habilidades y adquirir conocimientos que
+                        puedan ayudarme a construir un mejor futuro profesional.
+                    </p>
+                </article>
 
-                <p>
-                    Mi objetivo es aprender a programar de una buena manera,
-                    desarrollar nuevas habilidades y adquirir conocimientos que
-                    puedan ayudarme a construir un mejor futuro profesional.
-                </p>
+                <article class="proyecto-card">
+                    <img src="img/imagen2.jpg" alt="Desarrollo de páginas web">
 
-            </article>
+                    <h3>Crear páginas web</h3>
 
+                    <p>
+                        Quiero aprender a crear páginas web modernas y funcionales
+                        que puedan convertirse en proyectos reales y, en el futuro,
+                        en una forma de generar ingresos mediante mi trabajo.
+                    </p>
+                </article>
 
-            <article class="proyecto-card">
+                <article class="proyecto-card">
+                    <img src="img/imagen3.jpg"
+                         alt="Página para ayudar a las personas">
 
-                <img src="img/imagen2.jpg" alt="Desarrollo de páginas web">
+                    <h3>Ayudar a otras personas</h3>
 
-                <h3>Crear páginas web</h3>
-
-                <p>
-                    Quiero aprender a crear páginas web modernas y funcionales
-                    que puedan convertirse en proyectos reales y, en el futuro,
-                    en una forma de generar ingresos mediante mi trabajo.
-                </p>
-
-            </article>
-
-
-            <article class="proyecto-card">
-
-                <img src="img/imagen3.jpg" alt="Página para ayudar a las personas">
-
-                <h3>Ayudar a otras personas</h3>
-
-                <p>
-                    A futuro quiero crear una página que pueda ayudar a las personas
-                    a mejorar, brindándoles información, herramientas y recursos
-                    que sean fáciles de entender y utilizar.
-                </p>
-
-            </article>
+                    <p>
+                        A futuro quiero crear una página que pueda ayudar a las personas
+                        a mejorar, brindándoles información, herramientas y recursos
+                        que sean fáciles de entender y utilizar.
+                    </p>
+                </article>
 
             </div>
-
         </section>
-
 
         <section id="sobre-mi">
 
@@ -119,13 +122,13 @@
 
     </main>
 
-
     <footer id="contacto">
-
         <p>© 2026 Mi Portafolio</p>
-
     </footer>
 
-</body>
+    <!-- Conexión con el archivo JavaScript -->
+    <script src="js/app.js" defer></script>
 
+</body>
 </html>
+
